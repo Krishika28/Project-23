@@ -70,7 +70,12 @@ function keyPressed() {
  if (keyCode === DOWN_ARROW) {
 Matter.Body.setStatic(packageBody,false);
 	}
-    
+    if(keyCode === RIGHT_ARROW){
+	  helicopterSprite.velocityX = -2;  
+    }
+	 if(keyCode === LEFT_ARROW){
+	  helicopterSprite.velocityX = 2;  
+    }
   }
 
 
